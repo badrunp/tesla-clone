@@ -1,7 +1,7 @@
 const images = [
   {
     id: 1,
-    path: '/images/M3-Homepage-d.jfif'
+    path: '/images/M3-Homepage-D.jfif'
   },
   {
     id: 2,
