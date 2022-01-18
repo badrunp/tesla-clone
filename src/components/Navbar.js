@@ -3,7 +3,7 @@ import NavbarListMenu from './NavbarListMenu';
 import Tesla from './Tesla';
 import ButtonNavbarListMenu from './ButtonNavbarListMenu';
 
-function Navbar() {
+function Navbar({ handleSidebarActive }) {
   return (
     <div className="bg-transparent h-14 w-full fixed top-0 left-0 z-10 px-4 sm:px-0">
       <div className="container flex justify-between items-center h-full">
@@ -23,6 +23,7 @@ function Navbar() {
               />
             ) : (
               <ButtonNavbarListMenu
+                onCLick={handleSidebarActive}
                 key={item.id}
                 item={item}
                 className={`${item.id === navbarRightMenuLg.length ? 'block' : 'hidden xl:block'}`}
