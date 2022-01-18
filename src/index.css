@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tds-icon {
+  padding: 1px;
+}
+
+.tds-icon-logo-wordmark {
+  inline-size: calc(30px * 4);
+}
+
+.tds-icon {
+  --tds-icon--cancel-margin: calc(30px / -5);
+  --tds-icon--fill: var(#181b21, #171a20);
+  --tds-icon--stroke: var(#181b21, #171a20);
+  background: transparent;
+  block-size: var(30px);
+  content: '';
+  display: block;
+  max-width: 100%;
+  min-block-size: var(30px);
+  min-inline-size: var(30px);
+  overflow: hidden;
+  text-indent: -9999px;
+}
