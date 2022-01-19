@@ -95,7 +95,7 @@ function Home() {
           {subtitle !== '' && <p className="block text-gray-600 tracking-tight">{subtitle}</p>}
           {subtitle2 !== '' && <p className="block text-gray-600 tracking-tight">{subtitle2}</p>}
         </div>
-        <div className="flex space-y-3 md:space-y-0 space-x-0 md:space-x-4 flex-col w-full px-4 sm:px-8 md:px-0 md:w-max md:flex-row items-center fixed bottom-10 mx-auto left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="flex space-y-3 md:space-y-0 space-x-0 md:space-x-4 flex-col w-full px-4 sm:px-8 md:px-0 md:w-max md:flex-row items-center fixed bottom-8 mx-auto left-1/2 -translate-x-1/2 -translate-y-1/2">
           <button
             type="button"
             className="py-3 bg-white rounded-full uppercase text-xs w-full md:w-[237px] block font-semibold tracking-wide">
