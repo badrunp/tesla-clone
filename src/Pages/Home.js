@@ -45,15 +45,13 @@ function Home() {
   return (
     <Layout title="Tesla | Home">
       <div
-        onScroll={handleScroll}
-        className="relative h-screen snap-y snap-mandatory overflow-y-auto">
+        className="relative h-screen snap-y snap-mandatory overflow-y-auto"
+        onScroll={handleScroll}>
         {images.map((item) => (
-          <motion.div
-            key={item.id}
-            className="snap-start snap-always relative overflow-hidden h-screen">
+          <div key={item.id} className="snap-start snap-always relative overflow-hidden h-screen">
             <ImageHome image={item.path} className="hidden sm:block" />
             <ImageHome image={item.pathSm} className="block sm:hidden" />
-          </motion.div>
+          </div>
         ))}
       </div>
       <motion.div style={{ opacity }}>

@@ -51,8 +51,8 @@ const SubtitleHomeVariant = {
     y: 0,
     transition: {
       type: 'tween',
-      duration: 0.8,
-      delay: 1.2
+      delay: 1.2,
+      duration: 0.8
     }
   }
 };
@@ -69,8 +69,8 @@ const arrowDownHomeVariant = {
     y: 0,
     transition: {
       type: 'tween',
-      duration: 0.8,
-      delay: 2
+      delay: 2,
+      duration: 0.8
     }
   }
 };
@@ -88,8 +88,8 @@ const titleHomeVariant = {
     y: 0,
     transition: {
       type: 'tween',
-      duration: 0.8,
-      delay: 0.4
+      delay: 0.4,
+      duration: 0.8
     }
   }
 };
