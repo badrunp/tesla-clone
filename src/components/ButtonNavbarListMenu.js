@@ -1,11 +1,14 @@
-function NavbarListMenu({ item: { title }, onCLick = null, className = '' }) {
+import { motion } from 'framer-motion';
+
+function NavbarListMenu({ title, onCLick = null, className = '', ...props }) {
   return (
-    <button
+    <motion.button
       type="button"
       onClick={onCLick}
-      className={`${className} block text-gray-900 font-semibold text-[14px] tracking-wide px-4 rounded-full py-[6px] hover:bg-gray-500/20 focus:outline-none`}>
+      {...props}
+      className={`${className} block text-gray-900 font-semibold text-[14px] tracking-wide px-4 rounded-full py-[6px] focus:outline-none relative`}>
       {title}
-    </button>
+    </motion.button>
   );
 }
 

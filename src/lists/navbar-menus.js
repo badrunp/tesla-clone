@@ -28,25 +28,22 @@ const navbarCenterMenuLg = [
     id: 6,
     title: 'Solar Panels',
     url: 'http://localhost:3000'
-  }
-];
-
-const navbarRightMenuLg = [
+  },
   {
-    id: 1,
+    id: 7,
     title: 'Shop',
     url: 'http://localhost:3000'
   },
   {
-    id: 2,
+    id: 8,
     title: 'Account',
     url: 'http://localhost:3000'
   },
   {
-    id: 3,
+    id: 9,
     title: 'Menu',
     url: null
   }
 ];
 
-export { navbarCenterMenuLg, navbarRightMenuLg };
+export { navbarCenterMenuLg };
