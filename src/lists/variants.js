@@ -19,12 +19,10 @@ const sidebarVariant = {
 
 const sidebarMenuVariant = {
   hidden: {
-    opacity: 0,
-    x: -50
+    opacity: 0
   },
   visible: (i) => ({
     opacity: 1,
-    x: 0,
     transition: {
       delay: i / 55
     }
@@ -40,4 +38,66 @@ const overlayVariant = {
   }
 };
 
-export { sidebarVariant, sidebarMenuVariant, overlayVariant };
+const SubtitleHomeVariant = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    transition: {
+      type: 'tween'
+    }
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'tween',
+      duration: 0.8,
+      delay: 1.2
+    }
+  }
+};
+const arrowDownHomeVariant = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    transition: {
+      type: 'tween'
+    }
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'tween',
+      duration: 0.8,
+      delay: 1.8
+    }
+  }
+};
+
+const titleHomeVariant = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+    transition: {
+      type: 'tween'
+    }
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'tween',
+      duration: 0.8
+    }
+  }
+};
+
+export {
+  sidebarVariant,
+  sidebarMenuVariant,
+  overlayVariant,
+  SubtitleHomeVariant,
+  titleHomeVariant,
+  arrowDownHomeVariant
+};

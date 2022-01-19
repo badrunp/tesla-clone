@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 function Tesla() {
   return (
-    <div className="flex items-center justify-center">
+    <Link to="/" className="flex items-center justify-center">
       <svg
         className="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
         viewBox="0 0 342 35"
@@ -10,7 +12,7 @@ function Tesla() {
           fill="currentColor"
         />
       </svg>
-    </div>
+    </Link>
   );
 }
 

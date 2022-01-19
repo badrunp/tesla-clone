@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { sidebarMenu } from '../lists/sidebar';
 import { sidebarMenuVariant, sidebarVariant } from '../lists/variants';
 import Close from './Close';
@@ -21,7 +22,7 @@ function Sidebar({ active, close }) {
               <Close />
             </button>
           </div>
-          <div className="px-8">
+          <div className="px-8 pb-32">
             <ul className="flex flex-col items-start justify-start overflow-hidden">
               {sidebarMenu.map((item, i) => (
                 <motion.li
@@ -32,8 +33,8 @@ function Sidebar({ active, close }) {
                   custom={i}
                   key={item.id}
                   className="w-full my-1">
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     className="px-2 py-1 w-full font-semibold text-gray-600 rounded-full hover:bg-gray-100 flex items-start justify-start space-x-1">
                     {item.icon && <item.icon />}
                     <div className="flex flex-col">
@@ -42,7 +43,7 @@ function Sidebar({ active, close }) {
                         <span className="block text-sm text-gray-400">{item.subtitle}</span>
                       )}
                     </div>
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
