@@ -6,36 +6,45 @@ import images from '../lists/image';
 const data = [
   {
     title: 'Model 3',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: 'Order Online for Touchles Delivery',
+    subtitle2: null
   },
   {
     title: 'Model Y',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: 'Order Online for Touchles Delivery',
+    subtitle2: null
   },
   {
     title: 'Model S',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: 'Order Online for Touchles Delivery',
+    subtitle2: null
   },
   {
     title: 'Model X',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: 'Order Online for Touchles Delivery',
+    subtitle2: null
   },
   {
     title: 'Solar Panels',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: 'Lowest Cost Solar Panels in America',
+    subtitle2: null
   },
   {
     title: 'Solar Roof',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: 'Produce Clean Energy',
+    subtitle2: 'From Your Roof'
   },
   {
     title: 'Accessories',
-    subtitle: 'Order Online for Touchles Delivery'
+    subtitle: null,
+    subtitle2: null
   }
 ];
 
 function Home() {
   const [title, setTitle] = useState('Model 3');
+  const [subtitle, setSubtitle] = useState('Order Online for Touchles Delivery');
+  const [subtitle2, setSubtitle2] = useState('');
   const [count, setCount] = useState([0, 0, 0]);
 
   const c = useMotionValue(0);
@@ -53,6 +62,8 @@ function Home() {
       if (e.target.scrollTop > min && e.target.scrollTop < max) {
         setCount([min, currentH, max]);
         setTitle(item.title);
+        setSubtitle(item.subtitle != null ? item.subtitle : '');
+        setSubtitle2(item.subtitle2 != null ? item.subtitle2 : '');
       }
     });
   };
@@ -81,7 +92,8 @@ function Home() {
       <motion.div style={{ opacity }}>
         <div className="flex flex-col items-center fixed top-[20%] left-1/2 -translate-x-1/2 -translate-y-1/2">
           <h2 className="block text-4xl font-semibold tracking-normal text-gray-700">{title}</h2>
-          <p className="block text-gray-600 tracking-tight">Init adalah title</p>
+          {subtitle !== '' && <p className="block text-gray-600 tracking-tight">{subtitle}</p>}
+          {subtitle2 !== '' && <p className="block text-gray-600 tracking-tight">{subtitle}</p>}
         </div>
         <div className="flex space-y-3 md:space-y-0 space-x-0 md:space-x-4 flex-col w-full px-4 sm:px-8 md:px-0 md:w-max md:flex-row items-center fixed bottom-10 mx-auto left-1/2 -translate-x-1/2 -translate-y-1/2">
           <button
