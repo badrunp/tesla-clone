@@ -1,13 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-
-const overlayVariant = {
-  hidden: {
-    opcaity: 0
-  },
-  visible: {
-    opacity: 1
-  }
-};
+import { overlayVariant } from '../lists/variants';
 
 function Overlay({ active, close }) {
   return (

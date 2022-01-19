@@ -1,37 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { sidebarMenu } from '../lists/sidebar';
+import { sidebarMenuVariant, sidebarVariant } from '../lists/variants';
 import Close from './Close';
-
-const sidebarVariant = {
-  hidden: {
-    opcity: 0,
-    x: 320
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: 'spring',
-      stiffness: 600,
-      damping: 25,
-      mass: 1
-    }
-  }
-};
-
-const sidebarMenuVariant = {
-  hidden: {
-    opacity: 0,
-    x: -300
-  },
-  visible: (i) => ({
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: i / 50
-    }
-  })
-};
 
 function Sidebar({ active, close }) {
   return (
@@ -52,7 +22,7 @@ function Sidebar({ active, close }) {
             </button>
           </div>
           <div className="px-8">
-            <ul className="flex flex-col items-start justify-start">
+            <ul className="flex flex-col items-start justify-start overflow-hidden">
               {sidebarMenu.map((item, i) => (
                 <motion.li
                   variants={sidebarMenuVariant}
