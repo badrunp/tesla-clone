@@ -1,7 +1,11 @@
 const sidebarVariant = {
   hidden: {
     opcity: 0,
-    x: 320
+    x: 320,
+    transition: {
+      type: 'tween',
+      duration: 0.2
+    }
   },
   visible: {
     opacity: 1,
