@@ -26,6 +26,8 @@ module.exports = {
     'react/jsx-curly-brace-presence': 'off',
     'jsx-a11y/control-has-associated-label': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'no-use-before-define': 'off',
+    'array-callback-return': 'off',
     'prettier/prettier': [
       'error',
       {
