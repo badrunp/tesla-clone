@@ -24,6 +24,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
     'react/jsx-curly-brace-presence': 'off',
+    'jsx-a11y/control-has-associated-label': 'off',
     'prettier/prettier': [
       'error',
       {

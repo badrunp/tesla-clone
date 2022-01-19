@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Title from '../hooks/Title';
 import Navbar from './Navbar';
+import Overlay from './Overlay';
 import Sidebar from './Sidebar';
 
 function Layout({ children, title = 'Tesla' }) {
@@ -18,6 +19,7 @@ function Layout({ children, title = 'Tesla' }) {
 
   return (
     <>
+      <Overlay active={sidebarActive} close={handleSidebarClose} />
       <Navbar handleSidebarActive={handleSidebarActive} />
       <Sidebar active={sidebarActive} close={handleSidebarClose} />
       {children}

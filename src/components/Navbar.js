@@ -26,7 +26,7 @@ function Navbar({ handleSidebarActive }) {
                 onCLick={handleSidebarActive}
                 key={item.id}
                 item={item}
-                className={`${item.id === navbarRightMenuLg.length ? 'block' : 'hidden xl:block'}`}
+                className="bg-gray-500/20 xl:bg-transparent"
               />
             )
           )}
