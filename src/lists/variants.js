@@ -70,7 +70,7 @@ const arrowDownHomeVariant = {
     transition: {
       type: 'tween',
       duration: 0.8,
-      delay: 1.8
+      delay: 2
     }
   }
 };
@@ -88,7 +88,8 @@ const titleHomeVariant = {
     y: 0,
     transition: {
       type: 'tween',
-      duration: 0.8
+      duration: 0.8,
+      delay: 0.4
     }
   }
 };
