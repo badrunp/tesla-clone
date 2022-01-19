@@ -18,7 +18,7 @@ const sidebarVariant = {
 const sidebarMenuVariant = {
   hidden: {
     opacity: 0,
-    x: -110
+    x: -50
   },
   visible: (i) => ({
     opacity: 1,
