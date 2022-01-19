@@ -93,7 +93,7 @@ function Home() {
         <div className="flex flex-col items-center fixed top-[20%] left-1/2 -translate-x-1/2 -translate-y-1/2">
           <h2 className="block text-4xl font-semibold tracking-normal text-gray-700">{title}</h2>
           {subtitle !== '' && <p className="block text-gray-600 tracking-tight">{subtitle}</p>}
-          {subtitle2 !== '' && <p className="block text-gray-600 tracking-tight">{subtitle}</p>}
+          {subtitle2 !== '' && <p className="block text-gray-600 tracking-tight">{subtitle2}</p>}
         </div>
         <div className="flex space-y-3 md:space-y-0 space-x-0 md:space-x-4 flex-col w-full px-4 sm:px-8 md:px-0 md:w-max md:flex-row items-center fixed bottom-10 mx-auto left-1/2 -translate-x-1/2 -translate-y-1/2">
           <button
