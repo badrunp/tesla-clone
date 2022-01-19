@@ -7,10 +7,8 @@ const sidebarVariant = {
     opacity: 1,
     x: 0,
     transition: {
-      type: 'spring',
-      stiffness: 350,
-      damping: 30,
-      mass: 1
+      type: 'tween',
+      duration: 0.2
     }
   }
 };
@@ -24,7 +22,7 @@ const sidebarMenuVariant = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: i / 50
+      delay: i / 55
     }
   })
 };
