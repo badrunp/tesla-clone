@@ -91,7 +91,9 @@ function Home() {
       </div>
       <motion.div style={{ opacity }}>
         <div className="flex flex-col items-center fixed top-[20%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <h2 className="block text-4xl font-semibold tracking-normal text-gray-700">{title}</h2>
+          <h2 className="block text-4xl font-semibold tracking-normal text-gray-700 w-max truncate">
+            {title}
+          </h2>
           {subtitle !== '' && <p className="block text-gray-600 tracking-tight">{subtitle}</p>}
           {subtitle2 !== '' && <p className="block text-gray-600 tracking-tight">{subtitle2}</p>}
         </div>
