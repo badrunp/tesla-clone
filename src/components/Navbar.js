@@ -20,7 +20,7 @@ function Navbar({ handleSidebarActive }) {
       <div className="container flex justify-between items-center h-full">
         <Tesla />
         <motion.div
-          className="grow-0 flex items-center justify-center relative ml-14 py-1"
+          className="grow-0 flex items-center justify-center relative ml-14 py-2"
           onHoverEnd={handleUnActiveHover}>
           {navbarCenterMenuLg.map((item) => {
             const active = isHover === item.title ? 'true' : 'false';

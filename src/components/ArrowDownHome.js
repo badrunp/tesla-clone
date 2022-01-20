@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion';
 import { arrowDownHomeVariant } from '../lists/variants';
 
-function ArrowDownHome() {
+function ArrowDownHome({ isTransition }) {
   return (
-    <motion.div variants={arrowDownHomeVariant} initial="hidden" animate="visible">
+    <motion.div
+      variants={arrowDownHomeVariant}
+      custom={isTransition ? 2 : 0.2}
+      initial="hidden"
+      animate="visible">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-9 w-9 text-black animate-bounce"

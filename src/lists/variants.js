@@ -46,15 +46,15 @@ const SubtitleHomeVariant = {
       type: 'tween'
     }
   },
-  visible: {
+  visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
       type: 'tween',
-      delay: 1.2,
+      delay: i,
       duration: 0.8
     }
-  }
+  })
 };
 const arrowDownHomeVariant = {
   hidden: {
@@ -64,15 +64,15 @@ const arrowDownHomeVariant = {
       type: 'tween'
     }
   },
-  visible: {
+  visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
       type: 'tween',
-      delay: 2,
+      delay: i,
       duration: 0.8
     }
-  }
+  })
 };
 
 const titleHomeVariant = {
